@@ -1,0 +1,118 @@
+
+/*                                               ADMIN PANEL LOGIN KO CSS                                                 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+}
+body{
+    background-color: #f2f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.login-form{
+    width: 450px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+
+div.login-form h2{
+    text-align: center;
+    background-color: #204969;
+    padding: 12px 0px;
+    color: white;
+}
+div.login-form form{
+    padding: 30px 60px;
+}
+div.login-form form div.input-field{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+div.login-form form div.input-field i{
+    color: darkslategray;
+    padding: 10px 14px;
+    background-color: #f2f4f6;
+    margin-right: 4px;
+}
+div.login-form form div.input-field input{
+    background-color: #f2f4f6;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    padding-left: 15px;
+}
+div.login-form form button{
+    width: 100%;
+    background-color: #5bd1d7;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 15px 0;
+    transition: background-color 0.4s;
+}
+div.login-form form button:hover{
+    background-color: #41b6e6;
+}
+div.login-form form div.extra{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.login-form form div.extra a:first-child{
+    color: darkgrey;
+}
+div.login-form form div.extra a:last-child{
+    color: grey;
+}
+
+
+
+
+
+/*                                              ADMIN PANEL KO CSS                                                   */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+body.admin-panel{
+    margin: 0;
+    padding: o;
+    background-color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+}
+.admin-logout{
+    max-height: 40px;
+    cursor: pointer;
+    box-sizing: none;
+    border: none;
+}
+.admin-logout:hover{
+    background-color: aliceblue;
+
+}
+.header .admin-logout{
+    margin-top: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+    font-weight: 600;
+}
+h1.uppercase {
+text-transform: uppercase;
+font-family:poppins;
+color: white;
+}

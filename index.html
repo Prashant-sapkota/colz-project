@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khel-Khud</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="./proimg/faviconblack.png">
+</head>
+
+
+<!--                           login ko body                   -->
+<body class="login-ko-body">
+    <div class="overlay" onclick="closemodel()"></div>
+    <div class="login-box">
+        <span class="close" onclick="closemodel()">&times;</span>
+        <form action="logininfo.php" method="POST"> 
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="email"></ion-icon></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="Password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forget">
+                <label> <input type="checkbox">Remember Me </label>
+                <a href="#">Forget Password?</a>
+            </div>
+            <button type="Submit" name="save"  onclick="login()"> Login</button>
+            <div class="register-link">
+                <p>Don't have a account?
+                <a onclick="showreg_model()">Register</a></p>
+            </div>
+        </form>
+    </div> 
+    <script src="script.js"></script>
+    
+
+
+
+
+
+
+
+
+<!--                        home page ko body                              -->
+
+
+    <section class="home">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img onclick=""  src="./proimg/iconwhite.png" alt="Khel-Kud Logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <li><button><a onclick="showmodel() ">Login</a></button></li>
+                <li><button><a onclick="showreg_model()">Register</a></button></li>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2> we love<br><span>football</span></h2>
+                <p>
+                    
+                    "The beauty of the game unfolds as players move in perfect harmony, 
+                    showcasing skill, determination, and the relentless pursuit of victory."<br>
+                    "With a swift kick, the ball soars through the air, 
+                    finding its mark in the back of the net, echoing the collective roar of the crowd in triumph."
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--                          regiatrtion ko css                         -->
+
+
+
+    <div class="registration-ko-body">
+        <div class="reg-overlay" onclick="closereg_model()"></div>
+            <div class="registration-box">
+                <span class="reg-close" onclick="closereg_model()">&times;</span>
+                <form action="registration.php" method="POST">
+                    <form id="Register">
+                        <h2>Register Here</h2>
+                    <div class="reg-input-box">
+                        <input type="text" name="first_name" required >
+                        <label>First Name</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="text" name="address" required>
+                        <label>Address</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="text" name="age" required>
+                        <label>Age</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="Email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="Password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="reg-input-box">
+                        <input type="text" name="phone_number" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="reg-gender">
+                        <!-- <label> Gender:</label> -->
+                        <input type="radio" name="gender" id="gender">
+                        <span name="male"> Male</span>
+                        <input type="radio" name="gender" id="gender">
+                        <span name="Female"> Female</span><br>
+                    </div>
+                    <button type="Submit" name="save">Submit</button>
+                </form>
+        </div>
+    <!-- <script src="script.js"></scrip> -->
+    </div>
+</body>
+
+</html>
+
+

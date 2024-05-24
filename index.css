@@ -1,0 +1,474 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+/*                             log-in form ko  and popup ko css                                    */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+.login-box h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+
+
+.remember-forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget label input{
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+
+.login-box button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    background-color: black;
+    font-weight: 500;
+}
+
+.register-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    
+}
+
+
+.navbar button{
+    padding: 10px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+
+.overlay{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.login-box{
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background:transparent;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 10px 2px #ccc;
+    transition: 2s;
+}
+
+.showlogin-box{
+    top: 50%;
+}
+
+.login-box .close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    border-radius: 9px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+.input-box span{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                         home page ko css                                          */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.home{
+    background-image: url(./proimg/desktop1.png);
+    /* background: black; */
+    background-size: none;
+    background-size: cover;
+
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #566a3b; */
+    transition: 0.5s;
+
+}
+
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    right: 0;
+    position: absolute;
+    top: 10%;
+}
+
+
+header .logo{
+    top: 10%;
+    position: absolute;
+}
+header img{
+    width: 200px;
+    height: 70px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar button{
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    margin-left: 30px;
+}
+
+header .navbar li button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.textbox h2{
+    color: white;
+    font-size: 3em;
+    line-height: 1.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.content .textbox  h2 span{
+    font-size: 2em;
+}
+
+.content .textbox p{
+    color: #fff;
+}
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    padding-right: 10px;
+    margin-top: 20px;
+    justify-self: flex-end;
+}
+
+.content .imgbox img{
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+/*                            registration form ko css hai                                             */
+
+
+
+
+.reg-overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.showreg-overlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.reg-close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    border-radius: 9px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+.registration-box{
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 750px;
+    background:transparent;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 10px 2px #ccc;
+    transition: 2s;
+}
+
+.showregistration-box{
+    top: 50%;
+}
+
+
+.registration-box h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    
+}
+
+.reg-input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.registration-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.reg-input-box input:focus~label,
+.reg-input-box input:valid~label{
+    top: -5px;
+}
+
+
+.reg-input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.registration-box button{
+    width: 100%;
+    height: 40px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-bottom:12px;
+    margin: 3px;
+    padding: 1%;
+}
+
+.reg-gender{
+    color: white;
+    justify-content: space-between;
+    padding: 5px;
+    display: flex;
+    align-items:center;
+}

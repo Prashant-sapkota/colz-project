@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.navbar li {
+    display: list-item;
+}
+
+.home{
+    background-image: url(./proimg/1.1.webp);
+    /* background: black; */
+    /* background-size: none; */
+    background-size: cover;
+
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #566a3b; */
+    transition: 0.5s;
+
+}
+
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    right: 0;
+    position: absolute;
+    top: 10%;
+    margin-right: 5%;
+}
+
+header .logo{
+    top: 10%;
+    position: absolute;
+}
+header img{
+    width: auto;
+    height: 70px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar button{
+    margin-top: 10%;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    background: transparent;
+    margin-left: 30px;
+}
+
+
+.navbar li button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li button a:hover{
+    color: rgb(100, 92, 92);
+    transition: 0.4s;
+}
+
+form button{
+    color: white;
+}
+form button:hover{
+    color: rgb(100, 92, 92);
+    transition: 0.4s;
+}
+.content .textbox  h2{
+    position: absolute;
+    /* margin-top: 50px; */
+    font-size: 1.6em;
+    color: rgb(151, 142, 142);
+    text-transform: uppercase;
+    left: 35%;
+    top: 10%;
+    
+}
+
+
+
+
+
+
+
+
